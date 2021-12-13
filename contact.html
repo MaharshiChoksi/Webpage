@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/a5-contact.css">
+    </head>
+    <body>
+        <div class="a">
+            <div class="about">
+                <a href="about.html">About me</a>
+            </div>
+            <div class="home">
+                <a href="Home.html">Home</a>
+            </div>
+           <div class="name">
+                MAHARSHI BHAVESHKUMAR CHOKSI
+            </div>
+            <a href="https://www.instagram.com/maharshi_2003/"><img src="img/logo-instagram.svg" alt="insta-logo" class="ilogo"></a>
+            <a href="https://twitter.com/maharshi2024"><img src="img/logo-twitter.svg" alt="twitter-logo" class="tlogo"></a>
+            <a href="https://www.youtube.com/channel/UCcy3eaz57l9D6WaUoVs-Yjg"><img src="img/logo-youtube.svg" alt="youtube-logo" class="ylogo"></a>
+            <form class="form" onsubmit="return validation()">
+                <fieldset>
+                    <legend>Contact By Mail</legend>
+                    <!--Name-->
+                    <p class="input-box">
+                    <label>Name *</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                    </p>
+                    <!--Email-->
+                    <p class="input-box">
+                    <label>Email *</label>
+                    <input type="email" id="email" placeholder="Your email" required>
+                    </p>
+                    <!--Address-->
+                    <p class="input-box">
+                    <label>Address *</label>
+                    <input type="text" id="address" placeholder="Address" maxlength="100" required>
+                    </p>
+                    <!--City-->
+                    <p class="input-box">
+                    <label>City *</label>
+                    <input type="text" id="city" placeholder="Your City" required>
+                    </p>
+                    <!--Postal code-->
+                    <p class="input-box">
+                    <label>Postal Code *</label>
+                    <label style="font-size:14px; font-weight: loght;">(A1A 1A1)</label>
+                    <input type="text" id="pstcode" placeholder="Your Postal Code" pattern="[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ] \d[ABCEGHJKLMNPRSTVWXYZ]\d" required>
+                    </p>
+                    <!--Content-->
+                    <p class="content-box">
+                    <label>Content</label>
+                    <textarea type="text" id="content" placeholder="Any question...." rows="5" cols="20" onkeyup="ccount()"></textarea>
+                    <span id="textremain">390</span> characters remaining
+                    </p>
+                    <!--Submit-->
+                    <p class="button-input">
+                    <input type="submit" value="Send" id="submit_btn">
+                    </p>
+                    <!--Identity-->
+                    <p class="input-box">
+                    <input type="text" id="myname" value="Name: Maharshi Bhaveshkumar Choksi" hidden>
+                    <input type="number" id="studentid" value="149807208" hidden>
+                    </p>
+                </fieldset>
+          </form>
+        </div>
+        <div id="response"></div>
+        <script src="jss/a5.js"></script>
+    </body>
+</html>
